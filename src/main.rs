@@ -124,7 +124,7 @@ async fn animate_thinking(mut stop_signal: oneshot::Receiver<()>) {
         sleep(Duration::from_millis(100)).await;
     }
 }
-
+ 
 async fn print_response_character_by_character(response: &String) {
     print!("Bot: "); // Print the "Bot: " prefix before the response
     for c in response.chars() {
